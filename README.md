@@ -24,15 +24,15 @@ Before you begin, ensure you have the following installed on your system:
 ### Setup
 
 1.  **Clone the repository**:
-    ```bash
+    \`\`\`bash
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
-    ```
+    \`\`\`
 
 2.  **Create the necessary directory structure and files**:
     Ensure your project directory matches this structure. The `docker-compose.yml` and other configuration files will be placed in these locations.
 
-    ```
+    \`\`\`
     .
     ├── docker-compose.yml
     ├── grafana
@@ -54,7 +54,7 @@ Before you begin, ensure you have the following installed on your system:
     ├── promtail
     │   └── promtail-config.yml
     └── reload_configs.sh
-    ```
+    \`\`\`
 
 3.  **Configure Alertmanager (Optional but Recommended)**:
     Edit `alertmanager/alertmanager.yml` to set up your desired notification receiver (e.g., Slack, email, custom webhook).
@@ -70,14 +70,14 @@ Before you begin, ensure you have the following installed on your system:
     \`\`\`
 
 4.  **Make the reload script executable**:
-    ```bash
+    \`\`\`bash
     chmod +x reload_configs.sh
-    ```
+    \`\`\`
 
 5.  **Start the services**:
-    ```bash
+    \`\`\`bash
     docker compose up -d
-    ```
+    \`\`\`
     This command will download the necessary Docker images and start all services in detached mode.
 
 ## 🌐 Accessing the Services
